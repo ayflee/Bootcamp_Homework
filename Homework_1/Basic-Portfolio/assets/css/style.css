@@ -1,11 +1,14 @@
 body {
 	background: #ffffff;
-	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+	width:960px;
+	display:-webkit-flex;
+	justify-content: center;
 }
 
 header {
-	margin-left: 300px;
-	float: left;
 	color: white;
 	background: #4aaaa5;
 	padding: 40px;
@@ -13,17 +16,12 @@ header {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.nav {
-	padding: 20px;
-	float: right;
-	text-align: center;
-	color: #cccccc;
-	position: relative;
-	right: 280px;
+.links {
+	display:flex;
+	justify-content:right;
 }
 
 #About {
-	float: left;
 	padding: 10px;
 	border-right-style: solid;
 	border-right-width: 1px;
@@ -31,7 +29,6 @@ header {
 }
 
 #Portfolio {
-	float: left;
 	padding: 10px;
 	border-right-style: solid;
 	border-right-width: 1px;
@@ -39,41 +36,29 @@ header {
 }
 
 #Contact {
-	float: left;
 	padding: 10px;
 }
 
 .background {
+	width:100%;
 	background: #dddddd;
-	position: relative;
-	top: 96px;
-	border-top-style: solid;
-	border-top-width: 2px;
-	border-top-color: #ccc;
 }
 
 .content {
+	width:960px;
+	justify-content:center;
 	background: #ffffff;
-	display: inline-block;
-	padding: 10px;
-	0px;
-	10px;
-	20px;
-	margin-top: 0px;
-	margin-left: 300px;
-	margin-right: 300px;
-	margin-bottom: 100px;
-	position: relative;
-	top: -50px;
-	/* width:960px; */
+	position:relative;
+	top:50px;
 }
 
 h1 {
-	clear: both;
 	font-size: 20px;
 	font-weight: bolder;
 	color: #4aaaa5;
 	padding: 20px;
+	position:relative;
+	top:0px;
 }
 
 #profilepic {
@@ -88,7 +73,7 @@ p {
 }
 
 
-/* Contact CSS */
+/* Contact CSS START*/
 
 .form {
 	color: #666666;
@@ -122,10 +107,10 @@ p {
 }
 
 
-/* Contact CSS */
+/* Contact CSS END*/
 
 
-/* Portfolio CSS */
+/* Portfolio CSS START */
 
 .images {
 	float: left;
@@ -172,13 +157,14 @@ p {
 }
 
 
-/* Portfolio CSS */
+/* Portfolio CSS   END */
 
 footer {
 	text-align: center;
+	/* vertical-align:text-bottom; */
 	background: #666666;
 	padding: 20px;
 	border-top-color: #4aaaa5;
-	border-top-width: 105px;
+	border-top-width: 15px;
 	border-top-style: solid;
 }
